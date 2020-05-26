@@ -60,7 +60,7 @@ public class SharePortfolioServices {
 		Optional<List<SharePortfolioEntity>> sharePortfolioEntity = sharePortfolioRepository
 				.findByEmail(email);
 		
-		if(sharePortfolioEntity.isEmpty()) {
+		if(!sharePortfolioEntity.isPresent()) {
 			throw new PortfolioNotFoundException(email);
 		}else {
 			//TypeToken to be used by the ModelMapper
