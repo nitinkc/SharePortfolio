@@ -2,3 +2,4 @@
 2020-05-27 00:02:40.284  INFO [portfolio-ws,,,] 23160 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:599e7d7b3c98af7132be121c704ca218 - Re-registering apps/PORTFOLIO-WS
 2020-05-27 00:02:40.285  INFO [portfolio-ws,,,] 23160 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:599e7d7b3c98af7132be121c704ca218: registering service...
 2020-05-27 00:02:40.295  INFO [portfolio-ws,,,] 23160 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:599e7d7b3c98af7132be121c704ca218 - registration status: 204
+2020-05-27 00:04:08.253  INFO [portfolio-ws,,,] 23160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

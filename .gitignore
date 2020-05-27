@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+## Prevent the log files to be checked in
+*.log
+*.gz
