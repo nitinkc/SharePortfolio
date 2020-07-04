@@ -61,3 +61,187 @@
 2020-05-27 00:27:36.389  INFO [portfolio-ws,,,] 23160 --- [RMI TCP Connection(3)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2020-05-27 00:27:36.395  INFO [portfolio-ws,,,] 23160 --- [RMI TCP Connection(3)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:599e7d7b3c98af7132be121c704ca218 - deregister  status: 200
 2020-05-27 00:27:36.414  INFO [portfolio-ws,,,] 23160 --- [RMI TCP Connection(3)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-05-27 09:41:11.634  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.share.portfolio.PortfolioApplication   : No active profile set, falling back to default profiles: default
+2020-05-27 09:41:15.411  INFO [portfolio-ws,,,] 251616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-05-27 09:41:15.765  INFO [portfolio-ws,,,] 251616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274ms. Found 1 JPA repository interfaces.
+2020-05-27 09:41:16.279  WARN [portfolio-ws,,,] 251616 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-27 09:41:17.083  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8a04b73d-cb57-30ba-ae45-f27bb7aa55b5
+2020-05-27 09:41:19.407  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8070 (http)
+2020-05-27 09:41:19.424  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-27 09:41:19.425  INFO [portfolio-ws,,,] 251616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-27 09:41:20.109  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-27 09:41:20.109  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8427 ms
+2020-05-27 09:41:20.467  WARN [portfolio-ws,,,] 251616 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-27 09:41:20.469  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-27 09:41:20.481  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5b4880e4
+2020-05-27 09:41:20.705  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-27 09:41:21.040  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-27 09:41:21.055  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-05-27 09:41:22.711  WARN [portfolio-ws,,,] 251616 --- [restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@23db48d}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-05-27 09:41:24.028  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-27 09:41:24.205  INFO [portfolio-ws,,,] 251616 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-27 09:41:24.313  WARN [portfolio-ws,,,] 251616 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-27 09:41:24.314  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-27 09:41:24.345  INFO [portfolio-ws,,,] 251616 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-27 09:41:24.543  WARN [portfolio-ws,,,] 251616 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-27 09:41:24.680  INFO [portfolio-ws,,,] 251616 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-27 09:41:25.064  INFO [portfolio-ws,,,] 251616 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-27 09:41:26.322  INFO [portfolio-ws,,,] 251616 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-27 09:41:26.341  INFO [portfolio-ws,,,] 251616 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-27 09:41:27.280  WARN [portfolio-ws,,,] 251616 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-05-27 09:41:31.288  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-27 09:41:31.289  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-27 09:41:31.365  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-27 09:41:31.481  WARN [portfolio-ws,,,] 251616 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-27 09:41:31.600  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 310 ms
+2020-05-27 09:41:33.330  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-27 09:41:33.415  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-05-27 09:41:33.670  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-05-27 09:41:33.671  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-05-27 09:41:33.934  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-05-27 09:41:33.936  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-05-27 09:41:34.381  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 09:41:35.148  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-05-27 09:41:35.149  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-05-27 09:41:35.150  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-05-27 09:41:35.150  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-05-27 09:41:35.151  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-05-27 09:41:35.151  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-05-27 09:41:35.152  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-05-27 09:41:35.522  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-05-27 09:41:35.530  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-05-27 09:41:35.536  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-27 09:41:35.545  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1590586895543 with initial instances count: 1
+2020-05-27 09:41:35.573  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PORTFOLIO-WS with eureka with status UP
+2020-05-27 09:41:35.575  INFO [portfolio-ws,,,] 251616 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590586895575, current=UP, previous=STARTING]
+2020-05-27 09:41:35.580  INFO [portfolio-ws,,,] 251616 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:ed96f5879d475aa3cc2b6ab74bd514c7: registering service...
+2020-05-27 09:41:35.619  INFO [portfolio-ws,,,] 251616 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:ed96f5879d475aa3cc2b6ab74bd514c7 - registration status: 204
+2020-05-27 09:41:35.632  INFO [portfolio-ws,,,] 251616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8070 (http) with context path ''
+2020-05-27 09:41:35.634  INFO [portfolio-ws,,,] 251616 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8070
+2020-05-27 09:41:36.757  INFO [portfolio-ws,,,] 251616 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-05-27 09:41:37.036  INFO [portfolio-ws,,,] 251616 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-05-27 09:41:37.055  INFO [portfolio-ws,,,] 251616 --- [restartedMain] c.share.portfolio.PortfolioApplication   : Started PortfolioApplication in 33.87 seconds (JVM running for 42.261)
+2020-05-27 09:46:35.158  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 09:51:35.165  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 09:56:35.169  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:01:35.173  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:05:06.068  WARN [portfolio-ws,,,] 251616 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@23db48d}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-05-27 10:05:06.109  WARN [portfolio-ws,,,] 251616 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@23db48d}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) ~[zipkin-reporter-2.12.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:835) ~[na:na]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 9 common frames omitted
+
+2020-05-27 10:06:35.184  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:11:35.187  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:16:35.204  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:21:35.207  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:26:35.209  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:31:35.221  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:36:35.227  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:41:35.231  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:46:35.238  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:51:35.247  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 10:56:35.250  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:01:35.252  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:06:35.257  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:11:35.261  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:16:35.294  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:21:35.302  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:26:35.326  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:31:35.354  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:36:35.377  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:41:35.380  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:46:35.382  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:51:35.385  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 11:56:35.388  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:01:35.399  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:06:35.407  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:11:35.411  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:16:35.414  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:21:35.417  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:26:35.419  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:31:35.422  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:36:35.424  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:41:35.430  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:46:35.432  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:51:35.437  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 12:56:35.440  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:01:35.444  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:06:35.449  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:11:35.458  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:16:35.462  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:21:35.465  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:26:35.467  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:31:35.480  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:36:35.492  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:41:35.494  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:46:35.499  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:51:35.516  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 13:56:35.520  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 14:01:35.523  INFO [portfolio-ws,,,] 251616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-05-27 14:02:14.724  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-27 14:02:14.782  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PORTFOLIO-WS with eureka with status DOWN
+2020-05-27 14:02:14.785  WARN [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1590602534784, current=DOWN, previous=UP]
+2020-05-27 14:02:14.787  INFO [portfolio-ws,,,] 251616 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:ed96f5879d475aa3cc2b6ab74bd514c7: registering service...
+2020-05-27 14:02:14.852  INFO [portfolio-ws,,,] 251616 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:ed96f5879d475aa3cc2b6ab74bd514c7 - registration status: 204
+2020-05-27 14:02:16.498  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-05-27 14:02:16.594  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-27 14:02:16.666  WARN [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)
+ java.base@12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@12/java.lang.Thread.run(Thread.java:835)
+2020-05-27 14:02:16.669  WARN [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@23db48d}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)
+ java.base@12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ app//zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ app//zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:255)
+ app//zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358)
+ java.base@12/java.lang.Thread.run(Thread.java:835)
+2020-05-27 14:02:16.819  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-27 14:02:16.862  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-27 14:02:17.088  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-27 14:02:17.579  WARN [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-05-27 14:02:18.194  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-27 14:02:18.213  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-27 14:02:18.223  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-05-27 14:02:21.230  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-05-27 14:02:21.242  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PORTFOLIO-WS/portfolio-ws:ed96f5879d475aa3cc2b6ab74bd514c7 - deregister  status: 200
+2020-05-27 14:02:21.297  INFO [portfolio-ws,,,] 251616 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
